@@ -115,65 +115,7 @@ public final class Constants {
 
         public static final double kDeadband = 0.1;
     }
-
-    public static class GripperC {
-        public static final int rightMotor = 62;
-        public static final int leftMotor = 61;
-        public static final int GripperMotor = 60;
-        public static final int GripperCANifier = 59;
-        public static boolean leftMotorReversed = false;
-        public static boolean rightMotorReversed = true;
-    }
-     
-    public static class OperatorConstants {
-     public static final int kOperatorControllerPort = 1;
-    }
-
-    public static final class ArmConstants {
-        //CAN Values for Arm Hardware
-        public static final int armCANifier = 53;
-        public static final int armShoulderMotor = 50;
-        public static final int armExtensionMotor = 51;
-        public static final int CANCoderid = 52;
-
-        //Shoulder Soft Limit Stuff
-        public static final double ShoulderEncoderOffset = 263 * Math.PI/180;
-        //public static final double TopShoulderLimit = -0.05;
-        public static final double TopShoulderLimit = 0.22;
-        public static final double TopShoulderSoftStop = 0.1;
-        public static final double BottomShoulderLimit = -1.12;
-        public static final double BottomShoulderSoftStop = -1.17;
-        public static final boolean ShoulderEncoderRevsersed = false;
-
-        //Telescope Limits
-        public static final double TopTelescopeLimit = 125 * 360 * Math.PI/180;
-        public static final double BottomTelescopeLimit = -0.95 /* 10 * 360 * Math.PI/180 */ ;
     
-        //Telescope Lenghts
-        public static final double armR0 = 46;
-        public static final double armRetractedSoftStop = 46.5;
-        public static final double maxArmLength = 72;
-        public static final double armExtendedSoftStop = 71.5;
-        public static final double extensionPerRotation = 0.206;
-
-        // Arm control PID. Yay!
-        public static final double thetaP = 0.1;
-        public static final double thetaI = 0.05;
-        public static final double thetaD = 0;
-        public static final double radiusP = 0.01;
-        public static final double radiusI = 0.05;
-        public static final double radiusD = 0;
-
-        // Arm Soft Limit Locations
-        public static final double radiusOutputMax = 20;
-        public static final double thetaOutputMax = 20;
-
-        public static final double thetaBumper = -0.88;
-        public static final double yFloor = -41;
-        public static final double yBumper = -36.0;
- 
-    }
-
     public static final class BalanceConstants {
         public static final double balanceP = 0.0275;
         public static final double balanceI = 0;
